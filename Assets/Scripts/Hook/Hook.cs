@@ -8,6 +8,7 @@ public class Hook : MonoBehaviour
     [SerializeField] private Transform _transform;
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private HookRenderer _renderer;
+    [SerializeField] private MeshRenderer _meshrenderer;
 
     public UnityAction<bool, Vector3> IsActived;
 
@@ -19,6 +20,11 @@ public class Hook : MonoBehaviour
     private void OnDisable()
     {
         _inputManager.IsTouch -= OnSetPosition;
+    }
+
+    public void ManadgerMeshRenderer(bool value)
+    {
+        _meshrenderer.enabled = value;
     }
 
     private void OnSetPosition(Vector3 position)

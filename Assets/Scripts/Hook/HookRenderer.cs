@@ -16,7 +16,7 @@ public class HookRenderer : MonoBehaviour
         _lineRenderer.positionCount = 2;
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         if (_isDrawing == true)
         {

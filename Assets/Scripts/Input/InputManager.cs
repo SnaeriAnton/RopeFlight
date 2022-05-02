@@ -8,6 +8,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private Camera _camera;
     [SerializeField] private GameObject _hookObject;
+    [SerializeField] private Hook _hook;
 
     private float _maxDistanceRay = 10000000000000;
     private float _distanceFromCamera = 10f;
@@ -29,12 +30,14 @@ public class InputManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             IsTouch?.Invoke(Vector3.zero);
-            _hookObject.SetActive(false);
+            _hook.ManadgerMeshRenderer(false);
+            //_hookObject.SetActive(false);
         }
 
         if (_foliage == true)
         {
-            _hookObject.SetActive(true);
+            //_hookObject.SetActive(true);
+            _hook.ManadgerMeshRenderer(true);
             IsTouch?.Invoke(_screenWorldPosition);
             _foliage = false;
         }
