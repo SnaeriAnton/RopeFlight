@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(LineRenderer))]
 public class HookRenderer : MonoBehaviour
 {
     [SerializeField] private Transform _transformPlayer;
