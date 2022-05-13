@@ -1,6 +1,6 @@
+using RootMotion.Dynamics;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimator : MonoBehaviour
 {
@@ -8,6 +8,7 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
     [SerializeField] private Player _player;
+    [SerializeField] private PuppetMaster _puppetMaster;
 
     private void OnEnable()
     {
@@ -21,8 +22,8 @@ public class PlayerAnimator : MonoBehaviour
         {
             _rigidbodies[i].isKinematic = false;
         }
-        _rigidbody.constraints = RigidbodyConstraints.None;
-        _rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
+        _rigidbody.isKinematic = false;
+        _puppetMaster.enabled = true;
         _player.IsFlew -= OnDisableAnimator;
     }
 }

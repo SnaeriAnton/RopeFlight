@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private Hook _hook;
     [SerializeField] private float _jointSpring = 24f;
-    [SerializeField] private float _jointDamper = 7f;
+    [SerializeField] private float _jointDamper = 25f;
     [SerializeField] private float _maxDistance = 2.5f;
     [SerializeField] private Rigidbody _rigidbody;
 
