@@ -473,6 +473,7 @@ MonoBehaviour:
   - {fileID: 80018431362592029}
   - {fileID: 485062856785222355}
   - {fileID: 1496196558119959462}
+  _rigidbody: {fileID: 0}
   _animator: {fileID: 2648447065528407824}
   _player: {fileID: 4749394144409612615}
   _puppetMaster: {fileID: 8443760068541982071}
@@ -735,7 +736,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 50
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -893,7 +894,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 50
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -1053,7 +1054,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 50
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -1222,14 +1223,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 50
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
+    spring: 50
     damper: 0
   m_AngularYLimit:
-    limit: 50
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -1378,18 +1379,18 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -26.1727
+    limit: -26.17283
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 113.8273
+    limit: 113.8272
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 10
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -1538,18 +1539,18 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -26.173042
+    limit: -26.1731
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 113.82696
+    limit: 113.8269
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 10
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -1698,18 +1699,18 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -28.51789
+    limit: -28.51768
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 111.48211
+    limit: 111.4823
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 10
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -1858,18 +1859,18 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -28.517326
+    limit: -28.5176
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 111.48267
+    limit: 111.4824
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 10
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -2028,7 +2029,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 30
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -2189,7 +2190,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 25
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -2301,7 +2302,7 @@ MonoBehaviour:
   blendTime: 1
   fixTargetTransforms: 1
   solverIterationCount: 24
-  visualizeTargetPose: 1
+  visualizeTargetPose: 0
   mappingWeight: 1
   pinWeight: 0
   muscleWeight: 1
@@ -3082,7 +3083,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 85
+    limit: 30
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -3242,7 +3243,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 85
+    limit: 30
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -3402,7 +3403,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 85
+    limit: 35
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
@@ -3562,7 +3563,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 85
+    limit: 35
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
