@@ -5,10 +5,10 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [SerializeField] private Hook _hook;
-    [SerializeField] private float _jointSpring = 24f;
-    [SerializeField] private float _jointDamper = 25f;
-    [SerializeField] private float _maxDistance = 2.5f;
     [SerializeField] private Rigidbody _rigidbody;
+    private float _jointSpring = 32f;
+    private float _jointDamper = 22f;
+    private float _maxDistance = 0.5f;
 
     private SpringJoint _springJoint;
     private float _speed;
