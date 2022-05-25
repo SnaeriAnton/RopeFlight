@@ -1033,8 +1033,8 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 10
+    damper: 10
   m_LinearLimit:
     limit: 0
     bounciness: 0
@@ -1058,7 +1058,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 85.21938
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -1120,9 +1120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hook: {fileID: 0}
-  _jointSpring: 24
-  _jointDamper: 7
-  _maxDistance: 2.5
   _rigidbody: {fileID: 6008706411701912795}
 --- !u!1 &4091970201036312838
 GameObject:
@@ -1689,8 +1686,8 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 10
+    damper: 10
   m_LinearLimit:
     limit: 0
     bounciness: 0
@@ -3062,8 +3059,8 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 10
+    damper: 10
   m_LinearLimit:
     limit: 0
     bounciness: 0
@@ -3072,11 +3069,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -35
+    limit: -90
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 50
+    limit: 90
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
@@ -3836,7 +3833,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!153 &6539671642179335484
 ConfigurableJoint:

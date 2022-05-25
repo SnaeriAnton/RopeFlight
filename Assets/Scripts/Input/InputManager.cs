@@ -7,11 +7,12 @@ public class InputManager : MonoBehaviour
     [SerializeField] private Camera _camera;
 
     private float _maxDistanceRay = 10000000000000;
-    private float _distanceFromCamera = 7.7f;
+    private float _distanceFromCamera = 7f;//7.7f;
     private bool _foliage = false;
     private Vector3 _screenWorldPosition;
     private Vector3 _mousePosition;
     private RaycastHit _raycastHit;
+    private float _offsetZ = 0.08f;
 
     public UnityAction<Vector3> Touched;
     public UnityAction<Vector3> FingerTouched;
@@ -34,7 +35,7 @@ public class InputManager : MonoBehaviour
 
         if (_foliage == true)
         {
-            Touched?.Invoke(SetNewPosition());
+            Touched?.Invoke(SetNewPosition(_screenWorldPosition, _raycastHit.point));
             FingerTouched?.Invoke(_mousePosition);
             _foliage = false;
         }
@@ -47,9 +48,9 @@ public class InputManager : MonoBehaviour
         return screenWorldPosition;
     }
 
-    private Vector3 SetNewPosition()
+    private Vector3 SetNewPosition(Vector3 position, Vector3 _foliagePoint)
     {
-        Vector3 newPosition = new Vector3(_screenWorldPosition.x, _screenWorldPosition.y, _raycastHit.point.z);
+        Vector3 newPosition = new Vector3(_foliagePoint.x, position.y, _foliagePoint.z - _offsetZ);
         return newPosition;
     }
 
