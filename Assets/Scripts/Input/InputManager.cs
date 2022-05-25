@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private Camera _camera;
 
     private float _maxDistanceRay = 10000000000000;
-    private float _distanceFromCamera = 7f;//7.7f;
+    private float _distanceFromCamera = 7f;
     private bool _foliage = false;
     private Vector3 _screenWorldPosition;
     private Vector3 _mousePosition;
