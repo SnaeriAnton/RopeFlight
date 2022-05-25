@@ -6,7 +6,6 @@ public class Wind : MonoBehaviour
     [SerializeField] private Player _player;
 
     private float _threshold = 6;
-    private float _minThreshold = 6;
     private bool _isPlay = false;
 
     private void OnEnable()
