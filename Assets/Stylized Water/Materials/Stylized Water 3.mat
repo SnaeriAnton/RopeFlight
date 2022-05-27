@@ -36,7 +36,7 @@ Material:
     - _DistanceDensity: 0.02
     - _EdgeFoamDepth: 0.1
     - _FancyShadows: 0
-    - _FoamContribution: 0.471
+    - _FoamContribution: 0.718
     - _FoamNoiseScale: 0.775
     - _FoamScale: 10
     - _FoamSpeed: 0.1

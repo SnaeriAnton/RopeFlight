@@ -1043,11 +1043,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -12
+    limit: -6.260591
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 50
+    limit: 38.33876
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
@@ -1058,7 +1058,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 85.21938
+    limit: 25.583456
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}

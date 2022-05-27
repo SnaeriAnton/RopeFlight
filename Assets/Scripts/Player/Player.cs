@@ -6,9 +6,13 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private Hook _hook;
     [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private Rigidbody _rigidbodyPlayer;
+
     private float _jointSpring = 32f;
     private float _jointDamper = 22f;
     private float _maxDistance = 0.5f;
+    private bool _isForce = false;
+
 
     private SpringJoint _springJoint;
     private float _speed;
@@ -31,6 +35,17 @@ public class Player : MonoBehaviour
     {
         MoveSpeed();
         Moved?.Invoke(_speed);
+
+        AddForce();
+    }
+
+    private void AddForce()
+    {
+        if (_isForce == true)
+        {
+            _rigidbodyPlayer.AddForce(Vector3.right * 100f, ForceMode.Force);
+            _isForce = false;
+        }
     }
 
     private void MoveSpeed()
@@ -48,6 +63,8 @@ public class Player : MonoBehaviour
         else
         {
             Destroy(_springJoint);
+            _isForce = true;
+
         }
     }
 
